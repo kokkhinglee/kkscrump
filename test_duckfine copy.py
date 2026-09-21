@@ -21,7 +21,6 @@ class TestDuckFine(unittest.TestCase):
     def test_charge_applies_daily_fee_after_grace_period(self):
         fine = DuckFine("member-2")
 
-
         result = fine.charge(5)
 
         self.assertEqual(result, 1.5)
